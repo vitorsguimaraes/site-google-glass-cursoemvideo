@@ -8,7 +8,8 @@
             <!-- A <meta>tag define metadados sobre um documento HTML. Metadados são dados (informações) sobre dados. -->
             <!--Charset define o conjunto de caracteres do idioma -->
             <title>Google Glass</title> <!--Define o titulo da aba-->
-            <link rel="stylesheet" type="text/ccs" href="_css/estilo.css">
+            <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        
              <!--style= quando usado no , globaliza o estilo para todo o site. indent= recuo de paragrado
             stylesheet= folha de estilo-->
     </head>
@@ -19,20 +20,24 @@
     <!--Cores=  hsb= matiz(hue), saturação(saturation)%, brilho(brightness)%-->
 
         <body> <!-- mudar cor do fundo= bgcolor="white"-->
-            <div id="interface"></div>  <!--Div define uma área de divisão, dividir a interface da página. ID define um identificador a uma tag-->
+            <div id="interface">  <!--Div define uma área de divisão, dividir a interface da página. ID define um identificador a uma tag-->
             <header id="cabecalho"> <!--Define o cabeçalho da parte textual do site -->
                 <hgroup> <!--Define um grupo de titulos no texto-->
                         <h1>Google Glass</h1> <!--serve para definir o título do texto-->
                         <h2>A revolução do Google está chegando</h2>  
                 </hgroup>
 
-                    <img src="_imagens/glass-oculos-preto-peq.png">
-                    Menu Principal
-                    - Home
-                    - Especificações
-                    - Fotos
-                    - Multimídia
-                    - Fale conosco
+                <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+                <nav id="menu"> <!--“Nav” contém uma área de navegação -->
+                    <h1>Menu Principal</h1>
+                    <ul type="square">
+                    <li> <a href="index.html"> Home</a></li> 
+                    <li><a href="specs.html">Especificações</a></li> 
+                    <li><a href="fotos.html">Fotos</a></li> 
+                    <li><a href="multimidia.html">Multimídia</a></li>  
+                    <li><a href="fale-conosco.html">Fale conosco</a></li> 
+                </ul>
+                </nav>
             </header>
 
         <hgroup>
@@ -54,7 +59,7 @@
         </pre>
 
         <h2>O que é o Google Glass</h2>
-        <p style="text-align: justify;">  O <spam style="font-weight: bolder;">Google Glass</spam> é um acessório  em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências.&shy; Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.      
+        <p style="text-align: justify;">  O <spam style="font-weight: bolder;">Google Glass</spam> é um acessório  em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="`_blank"> Project Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeoconferências.&shy; Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.      
         </p> <!--p = define um parágrafo, b= negrito, i= italico, em= enfâse-->
         <!--A formatação do estilo é feita pelo CSS 
             = <span style= "estilo" ..vai até </span> e < "tag" style = "estilo"; para configuração global da tag-->
@@ -96,7 +101,8 @@
 
         <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p> 
 
-        <h5>Copyright 2013 - by Gustavo Guanabara</h5>
-        <h5>Facebook | Twitter</h5>
-        </body>
+        <p>Copyright 2013 - by Gustavo Guanabara</p>
+        <p>Facebook | Twitter</p>
+    </div>
+    </body>
     </html>
