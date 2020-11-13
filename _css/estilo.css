@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*estilo para o  body*/
+body{
+    background-color: rgba(9, 24, 240, 0.418);
+    color:black;}
+/*Estilo para os paragrafos*/
+p{ 
+    text-align: justify;
+    text-indent: 50px; 
+    color: rgb(250, 87, 27);
+}
+/* Formatação de imagens com legendas. "figure"= adicionar foto com formatação*/ 
+figure.fotos-com-legenda {
+    position: relative;
+    border: 8px solid white; /* Espessura da borda e solid é a cor da borda*/
+    box-shadow: 1px 1px 4px black; /*Sombra= *Deslocamento horizontal, vertical, espalhamento, cor*/
+    } 
+figure.fotos-com-legenda img{
+    height: 100%; /*Altura*/
+    width: 100%; /*Largura*/
+}
+
+figure.fotos-com-legenda figcaption{
+    opacity: 0;  /*Opacidade*/
+    position: absolute;    /*Define a posição */
+    top: 0px; 
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%; /*Altura*/
+    width: 100%; /*Largura*/
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.fotos-com-legenda:hover figcaption{  /*Cria uma formatação especifica quado você passa o mouse em cima*/
+    opacity: 1;
+}
+
+    
