@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*estilo para o  body*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'FonteLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
 body{
     background-color: rgba(184, 184, 184, 0.89);
     color:black;
@@ -9,8 +14,8 @@ div#interface {
     width: 900px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
-    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px;
 }
 p{ 
     text-align: justify;
@@ -19,11 +24,29 @@ p{
 }
 header#cabecalho img#icone {
     position: absolute;
-    left: 780px;
-    top: 40px;
+    left: 900px;
+    top: 70px;
 }
 header#cabecalho {
-
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+header#cabecalho h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    
+}
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    margin-top: 0px;
+    
 }
 /* Formatação de imagens com legendas. "figure"= adicionar foto com formatação*/ 
 figure.fotos-com-legenda {
@@ -65,7 +88,7 @@ nav#menu ul{
 }
 nav#menu li{
     display: inline-block; /* palavras em uma unica linha */
-    background-color: rgb(250, 255, 255);
+    background-color: rgb(255, 255, 255);
     padding: 10px; /* espaço fora */
     margin: 2px; /* espaço dentro do botao */
     transition: background-color 1s;
@@ -73,7 +96,7 @@ nav#menu li{
 nav#menu li:hover {
     background-color: #606060
 }
-nav#menu hl{
+nav#menu h1{
     display: none;
 }
 nav#menu a {
@@ -82,5 +105,25 @@ nav#menu a {
 }
 nav#menu a:hover {
     color: #ffffff;
-    text-decoration: underline;
+    
+}
+section#corpo {
+    display: block;
+    width: 520px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+    /* Configuracoes area do site*/
+}
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
 }
