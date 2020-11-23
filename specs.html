@@ -8,7 +8,7 @@
             <!--Charset define o conjunto de caracteres do idioma -->
             <title>Google Glass</title> <!--Define o titulo da aba-->
             <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
-        
+            <link rel="stylesheet" href="_css/specs.css"/>
              <!--style= quando usado no , globaliza o estilo para todo o site. indent= recuo de paragrado
             stylesheet= folha de estilo-->
     </head>
@@ -26,7 +26,7 @@
                         <h2>A revolução do Google está chegando</h2>  
                 </hgroup>
 
-                <img id="icone" src="_imagens/especificacoes">
+                <img id="icone" src="_imagens/especificacoes.png">
                 <nav id="menu"> <!--“Nav” contém uma área de navegação -->
                     <h1>Menu Principal</h1>
                     <ul type="square">
@@ -43,18 +43,35 @@
                 </ul>
                 </nav>
             </header>
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+            <hgroup>
+                <h3>Glass > Especificações</h3>
+                <h1>Raio-X no Google Glass</h1>
+                <h2>por Vitor Saraiva</h2>
+                <h3 class="direita">Criado em 11/Novembro/2020</h3>
+            </hgroup>
+        </header>
+        <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+    <section id="conteudo"> 
+        <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa" alt="glass-esquema-marcado">
+        <iframe src="google-glass.html"  id="frame-spec" name="janela"></iframe>
+        <map name="meumapa">
+            <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela"  alt=""/>
+            <area shape="circle" coords="158,243,13" href="google-glass.html#camera" target="janela" alt="">
+            <area shape="circle" coords="73,52,12" href="google-glass.html#gadgets" target="janela" alt="">
+            <area shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela" alt="">
+            
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-
-[     <footer id="rodape">
+        </map>
+    </section>
+    </article>
+</section>
+<footer id="rodape">
     <p>Copyright 2020 - by Vitor Guimarães <br>
     <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a>
-     <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+    <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
 </footer>
 </div>
 </body>
