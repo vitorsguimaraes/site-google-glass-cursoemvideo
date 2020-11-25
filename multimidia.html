@@ -8,6 +8,7 @@
             <!--Charset define o conjunto de caracteres do idioma -->
             <title>Google Glass</title> <!--Define o titulo da aba-->
             <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+            <link rel="stylesheet"  href="_css/media.css"/>
         
              <!--style= quando usado no , globaliza o estilo para todo o site. indent= recuo de paragrado
             stylesheet= folha de estilo-->
@@ -26,7 +27,7 @@
                         <h2>A revolução do Google está chegando</h2>  
                 </hgroup>
 
-                <img id="icone" src="_imagens/multimidia">
+                <img id="icone" src="_imagens/multimidia.png">
                 <nav id="menu"> <!--“Nav” contém uma área de navegação -->
                     <h1>Menu Principal</h1>
                     <ul type="square">
@@ -54,16 +55,21 @@
                             <h3 class="direita">Criado em 11/Novembro/2020</h3>
                         </hgroup>
                     </header>
-
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
+        <div id="tv-radio">
+            <audio id="musica" src="_media/2009-lovers-carvings-bibio.mp3" controls="controls" type="audio/mpeg">
+                <!--para usar em diferentes navegadores adicionar outros formatos do video. pode ser usado na tag source. Ex. <source scr="caminho" type="tipo de formato. video/mp4, video/webm, video/ogg" /> -->
+            Desculpe, mais não foi possível carregar o áudio.   
+            </audio>
+            <video id="filme" src="_media/getting-started.mp4" controls="controls" poster="_imagens/video-mini03.jpg">
+            Desculpe, mais não foi possível carregar o vídeo.
+            </video>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>         
 
 <footer id="rodape">
     <p>Copyright 2020 - by Vitor Guimarães <br>
     <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a>
-     <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+    <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
 </footer>
 </div>
 </body>
